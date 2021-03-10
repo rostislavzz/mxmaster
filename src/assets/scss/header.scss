@@ -1,0 +1,13 @@
+@import "nav";
+
+.header {
+  display: flex;
+  justify-content: center;
+
+  @include desktop {
+    align-items: center;
+    justify-content: space-around;
+    background: #2f3132;
+    height: 100px;
+  }
+}

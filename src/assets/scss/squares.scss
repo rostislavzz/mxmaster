@@ -1,0 +1,29 @@
+@import "mixins";
+
+.squares {
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__item {
+      width: 50%;
+      height: 557px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &_order-0 {
+        order: 0;
+      }
+
+      &_order-1 {
+        order: 1;
+      }
+
+      &_align-end {
+        align-items: flex-end;
+      }
+    }
+  }
+}

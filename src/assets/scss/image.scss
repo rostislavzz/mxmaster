@@ -1,0 +1,80 @@
+@import "mixins";
+
+.image {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+
+  &_mxmaster {
+    height: 230px;
+    background-position: bottom;
+    background-image: url("/src/assets/images/mxmaster.png");
+
+    @include tablet {
+      height: 514px;
+      background-image: url("/src/assets/images/mxmaster-tablet.png");
+    }
+
+    @include desktop {
+      height: 671px;
+      background-image: url("/src/assets/images/mxmaster-desktop.png");
+    }
+  }
+
+  &_mxmaster-left {
+    height: 218px;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url("/src/assets/images/mxmaster-left.png");
+
+    @include tablet {
+      height: 495px;
+      background-image: url("/src/assets/images/mxmaster-left-tablet.png");
+    }
+
+    @include desktop {
+      background: url("/src/assets/images/mxmaster-front.png") no-repeat 0 120px,
+        url("/src/assets/images/mxmaster-left-desktop.png") no-repeat right bottom;
+    }
+  }
+
+  &_comfort {
+    height: 310px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/src/assets/images/comfort.png");
+
+    @include tablet {
+      height: 549px;
+      background-image: url("/src/assets/images/comfort-tablet.jpg");
+    }
+
+    @include desktop {
+      height: 557px;
+      background-image: url("/src/assets/images/comfort-desktop.jpg");
+    }
+  }
+
+  &_speed {
+    height: 310px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/src/assets/images/speed.png");
+
+    @include tablet {
+      height: 549px;
+      background-image: url("/src/assets/images/speed-tablet.jpg");
+    }
+
+    @include desktop {
+      height: 557px;
+      background-image: url("/src/assets/images/speed-desktop.png");
+    }
+  }
+
+  &_settings {
+    height: 640px;
+    background-position: center;
+    background-image: url("/src/assets/images/settings.png");
+  }
+}

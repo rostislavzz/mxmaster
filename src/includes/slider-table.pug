@@ -1,0 +1,27 @@
+#slider-table.carousel.slide.section__slider_table(data-ride="carousel")
+  ol.carousel-indicators
+    li.active(data-target="#slider-table", data-slide-to="0")
+    li(data-target="#slider-table", data-slide-to="1")
+    li(data-target="#slider-table", data-slide-to="2")
+    li(data-target="#slider-table", data-slide-to="3")
+    li(data-target="#slider-table", data-slide-to="4")
+
+  .carousel-inner
+    .carousel-item.active
+      img.d-block.w-100(src=require('/src/assets/images/slider-table/wood.png'), alt="wood")
+    .carousel-item
+      img.d-block.w-100(src=require('/src/assets/images/slider-table/glass.png'), alt="glass")
+    .carousel-item
+      img.d-block.w-100(src=require('/src/assets/images/slider-table/linoleum.png'), alt="linoleum")
+    .carousel-item
+      img.d-block.w-100(src=require('/src/assets/images/slider-table/cloth.png'), alt="cloth")
+    .carousel-item
+      img.d-block.w-100(src=require('/src/assets/images/slider-table/marble.png'), alt="marble")
+
+  a.carousel-control-prev(href="#slider-table", role="button", data-slide="prev")
+    span.carousel-control-prev-icon(aria-hidden="true")
+    span.sr-only Previous
+
+  a.carousel-control-next(href="#slider-table", role="button", data-slide="next")
+    span.carousel-control-next-icon(aria-hidden="true")
+    span.sr-only Next

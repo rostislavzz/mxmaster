@@ -1,0 +1,14 @@
+@import "mixins";
+
+.app-icons {
+  display: flex;
+  justify-content: space-between;
+
+  &__ico {
+    height: 23px;
+
+    @include tablet {
+      height: 35px;
+    }
+  }
+}

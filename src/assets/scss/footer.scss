@@ -1,0 +1,12 @@
+@import "mixins";
+
+.footer {
+  height: 75px;
+  padding-top: 22px;
+  background-color: $graphite;
+
+  @include tablet {
+    height: 150px;
+    padding-top: 47px;
+  }
+}

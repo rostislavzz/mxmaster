@@ -1,0 +1,29 @@
+@import "colors";
+@import "mixins";
+
+.lead {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $dark-gray;
+
+  @include tablet {
+    font-size: 150px;
+    line-height: 176px;
+  }
+
+  @include desktop {
+    &__num {
+      font-size: 300px;
+      line-height: 352px;
+    }
+    &__text {
+      font-size: 96px;
+      line-height: 112px;
+    }
+  }
+}

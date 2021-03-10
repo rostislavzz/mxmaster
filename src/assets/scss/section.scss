@@ -1,0 +1,363 @@
+@import "colors";
+@import "mixins";
+@import "app-icons";
+@import "blocks";
+@import "heading";
+@import "icon";
+@import "image";
+@import "lead";
+@import "ordered-list";
+@import "text";
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 0 0;
+  background-color: #ffffff;
+
+  @include desktop {
+    padding: 100px 0 0 0;
+  }
+
+  &_productivity {
+    padding-top: 25px;
+    padding-bottom: 48px;
+    background-color: $gray;
+
+    @include tablet {
+      padding-top: 54px;
+    }
+
+    @include desktop {
+      padding-top: 0;
+      padding-bottom: 56px;
+    }
+  }
+
+  &_bluetooth {
+    padding-top: 42px;
+    padding-bottom: 18px;
+    background-color: $light-gray;
+
+    @include tablet {
+      padding-top: 80px;
+    }
+
+    @include desktop {
+      padding-top: 44px;
+      padding-bottom: 69px;
+    }
+  }
+
+  &_table {
+    padding-bottom: 43px;
+  }
+
+  &_lifestile {
+    padding-bottom: 200px;
+    background-color: $light-gray;
+    background-image: url("/src/assets/images/lifestyle.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+    @include tablet {
+      padding-bottom: 490px;
+      background-image: url("/src/assets/images/lifestyle-tablet.jpg");
+    }
+
+    @include desktop {
+      padding-bottom: 1000px;
+      background-image: url("/src/assets/images/lifestyle-desktop.jpg");
+    }
+  }
+
+  &_settings {
+    background-color: $light-gray;
+  }
+
+  &_applications {
+    padding-top: 23px;
+    background-color: $dark-gray;
+
+    @include tablet {
+      margin: 0 65px 70px 64px;
+    }
+
+    @include desktop {
+      width: 749px;
+      margin: 0 auto 71px auto;
+    }
+  }
+
+  @include desktop {
+    &_comfort,
+    &_speed {
+      margin: 0;
+      padding: 0 calc(50% - 655px);
+    }
+  }
+
+  &__heading {
+    margin-left: 29px;
+    margin-right: 28px;
+
+    @include tablet {
+      margin-left: 129px;
+      margin-right: 129px;
+    }
+
+    &_comfort {
+      @include desktop {
+        margin: 0 0 28px 36px;
+        width: 281px;
+        text-align: left;
+      }
+    }
+
+    &_speed {
+      margin-top: 70px;
+
+      @include desktop {
+        margin: 0 36px 28px 0;
+        width: 317px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__image {
+    &_mxmaster {
+      margin: 94px 0 47px 0;
+
+      @include tablet {
+        margin: 160px 0 104px 0;
+      }
+
+      @include desktop {
+        height: 600px;
+        margin: 70px 0 8px 0;
+      }
+    }
+
+    &_mxmaster-left {
+      height: 288px;
+
+      @include tablet {
+        height: 597px;
+        margin: 46px 19px 3px 39px;
+      }
+
+      @include desktop {
+        height: 426px;
+        margin: 0 calc(50% - 622px);
+      }
+    }
+
+    &_settings {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    margin: 20px 33px 20px 33px;
+
+    @include tablet {
+      margin: 30px 77px 30px 77px;
+    }
+
+    @include desktop {
+      width: 958px;
+      margin: 35px auto 35px auto;
+    }
+
+    &_productivity {
+      @include tablet {
+        margin-left: 154px;
+        margin-right: 155px;
+      }
+
+      @include desktop {
+        margin: 0 auto 35px auto;
+      }
+    }
+
+    &_bluetooth {
+      @include desktop {
+        width: 761px;
+        margin-bottom: 0;
+      }
+    }
+
+    &_table {
+      margin: 20px 61px 20px 67px;
+
+      @include tablet {
+        margin: 30px 77px 30px 77px;
+      }
+
+      @include desktop {
+        width: 630px;
+        margin: 35px auto 35px auto;
+      }
+    }
+
+    &_darkfield {
+      @include desktop {
+        width: 765px;
+      }
+    }
+
+    &_surface {
+      margin-bottom: 50px;
+
+      @include desktop {
+        margin-top: 39px;
+        margin-bottom: 55px;
+      }
+    }
+
+    &_lifestile {
+      &:first-of-type {
+        margin-bottom: 0;
+      }
+
+      @include tablet {
+        margin-left: 64px;
+        margin-right: 65px;
+      }
+
+      @include desktop {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &_applications {
+      margin-bottom: 26px;
+
+      @include tablet {
+        margin: 25px 70px 29px 70px;
+      }
+
+      @include desktop {
+        width: auto;
+        margin: 25px 63px 29px 63px;
+      }
+    }
+
+    &_comfort {
+      @include desktop {
+        margin: 0 0 0 36px;
+        width: 400px;
+        text-align: left;
+      }
+    }
+
+    &_speed {
+      @include desktop {
+        margin: 0 36px 0 0;
+        width: 400px;
+        text-align: right;
+      }
+    }
+  }
+
+  &__icon {
+    &_arrow {
+      margin-top: 20px;
+      text-align: center;
+
+      @include tablet {
+        margin-top: 46px;
+      }
+
+      @include desktop {
+        margin-top: 14px;
+      }
+    }
+
+    &_bluetooth {
+      margin-bottom: 27px;
+
+      @include tablet {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__advantages {
+    margin: 10px 0 10px 0;
+
+    @include tablet {
+      margin: 20px 0 50px 0;
+    }
+
+    @include desktop {
+      margin: 15px 0 50px 0;
+    }
+  }
+
+  &__ordered-list {
+    margin: 16px 0 0 54px;
+
+    @include tablet {
+      margin: 32px 68px 0 67px;
+    }
+
+    @include desktop {
+      width: 943px;
+      margin: 29px auto 0 auto;
+    }
+  }
+
+  &__slider {
+    &_table {
+      margin: 20px 0 8px 0;
+
+      @include desktop {
+        margin: 0;
+        padding: 0 calc(50% - 640px);
+      }
+    }
+
+    &_settings {
+      margin: 15px 22px 95px 23px;
+
+      @include tablet {
+        margin: 24px 198px 148px 199px;
+      }
+
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__app-icons {
+    margin: 0 22px 0 29px;
+
+    @include tablet {
+      margin: 0 126px 0 127px;
+    }
+  }
+
+  @include desktop {
+    &__lead {
+      display: flex;
+      justify-content: center;
+
+      &-num {
+        padding-left: 80px;
+      }
+
+      &-text {
+        padding-top: 45px;
+      }
+    }
+  }
+}

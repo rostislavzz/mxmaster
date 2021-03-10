@@ -1,0 +1,101 @@
+doctype html
+html
+  include includes/head.pug
+  body
+    section.section.section_productivity
+      include includes/header.pug
+      .image.image_mxmaster.section__image_mxmaster
+        h2.heading Работайте продуктивнее
+      p.text.section__text.section__text_productivity
+        | Создана для эффективной работы, программирования и творчества
+      a.section__icon_arrow(href="#bluetooth")
+        img.icon_arrow(src=require('/src/assets/images/arrow.svg'), alt="arrow")
+
+    section#bluetooth.section.section_bluetooth
+      img.icon_bluetooth.section__icon_bluetooth(src=require('/src/assets/images/icon-bluetooth.svg'))
+      h2.heading Без проводов
+      p.text.section__text.section__text_bluetooth
+        | Беспроводная мышь MX Master 3 работает без проводов до нескольких месяцев.
+        | Вы закроете приоритетные задачи прежде, чем понадобится подзарядка.
+      .image.image_mxmaster-left.section__image_mxmaster-left
+        h3.lead.section__lead
+          span.lead__num.section__lead-num 70
+          | !{' '}
+          span.lead__text.section__lead-text дней
+
+    section#table.section.section_table
+      h2.heading За любым столом
+      p.text.section__text.section__text_table
+        | Исследуйте ландшафты своего дома, не отвлекаясь от работы.
+        | MX Master 3 достаточно компактная, чтобы сменить рабочее место и перенестись с ноутбуком на кухню.
+      ul.blocks.section__advantages
+        li.blocks__item
+          span.blocks__header в 5 раз
+          span.blocks__text точнее предшественников
+        li.blocks__item
+          span.blocks__header 4 000
+          span.blocks__text точек на дюйм чувствительность датчика
+      include includes/slider-table.pug
+      p.text.text_bold.section__text.section__text_surface
+        | Переключите поверхность
+      p.text.section__text.section__text_darkfield
+        | Благодаря технологии Logitech Darkfierd,
+        | MX Master 3 работает на любой поверхности, даже на стекле.
+
+    section#lifestyle.section.section_lifestile
+      h2.heading.section__heading Одновременно с нескольких устройств
+      p.text.section__text.section__text_lifestile
+        | С технологией Flow вы сможете работать одновременно на нескольких компьютерах,
+        | мгновенно переключаясь между разными операционными системами — даже между Windows® и macOS.
+        | Например, достаточно скопировать текст, изображение или файл на MacBook и переместить его
+        | на Windows PC без задержек.
+      p.text.section__text.section__text_lifestile
+        | Клавиатура MX Keys отслеживает перемещение курсора мыши MX Master 3, благодаря чему ваш
+        | текст появится там, где вы работаете в текущий момент.
+      ol.ordered-list.section__ordered-list
+        li.ordered-list__item Нажмите и удерживайте папку, чтобы переместить её
+        li.ordered-list__item Перенесите папку на любой из соседних экранов
+        li.ordered-list__item Да, всё так просто!
+
+    section#settings.section.section_settings
+      h2.heading.section__heading С индивидуальными настройками
+      p.text.section__text
+        | Мышь MX Master 3 адаптируется под ваши рабочие процессы.
+        | Благодаря индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
+        | под любое используемое приложение.
+      .section__slider_settings
+        include includes/slider-settings.pug
+      .image.image_settings.section__image_settings
+      section.section_applications
+        .app-icons.section__app-icons
+          img.app-icons__ico(src=require('/src/assets/images/apps/photoshop.svg'), alt="photoshop")
+          img.app-icons__ico(src=require('/src/assets/images/apps/premier.svg'), alt="premier")
+          img.app-icons__ico(src=require('/src/assets/images/apps/browser.svg'), alt="browser")
+          img.app-icons__ico(src=require('/src/assets/images/apps/word.svg'), alt="word")
+          img.app-icons__ico(src=require('/src/assets/images/apps/powerpoint.svg'), alt="powerpoint")
+          img.app-icons__ico(src=require('/src/assets/images/apps/excel.svg'), alt="excel")
+          img.app-icons__ico(src=require('/src/assets/images/apps/finalcut.svg'), alt="finalcut")
+        p.text.text_applications.section__text.section__text_applications
+          | Начните работать продуктивнее с момента покупки — устройство предварительно
+          | оптимизировано под популярные приложения на Windows и Mac.
+
+    section.section.section_comfort.squares
+      .squares__item.squares__item_order-1
+        h2#comfort.heading.section__heading.section__heading_comfort Комфортно. Эргономично. Интуитивно
+        p.text.section__text.section__text_comfort
+          | Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони.
+          | Но не менее важны колесико прокрутки для большого пальца и расположение кнопок жестов,
+          | с которыми вы будете творить уверенно как никогда.
+      .squares__item.squares__item_order-0
+        .image.image_comfort
+
+    section.section.section_speed.squares
+      .squares__item.squares__item_align-end
+        h2#speed.heading.section__heading.section__heading_speed Быстрее, чем когда либо
+        p.text.section__text.section__text_speed
+          | Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
+          | со скоростью 1000 строк за 1 секунду. С точностью до пикселя. Бесшумно.
+      .squares__item
+        .image.image_speed
+
+    include includes/footer.pug
