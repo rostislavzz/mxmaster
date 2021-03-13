@@ -44,8 +44,7 @@
     }
 
     @include desktop {
-      padding-top: 44px;
-      padding-bottom: 69px;
+      padding: 44px calc(50% - 622px) 69px;
     }
   }
 
@@ -150,7 +149,7 @@
 
       @include desktop {
         height: 426px;
-        margin: 0 calc(50% - 622px);
+        margin: 0;
       }
     }
 
