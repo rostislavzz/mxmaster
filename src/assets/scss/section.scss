@@ -53,20 +53,18 @@
   }
 
   &_lifestile {
-    padding-bottom: 200px;
+    padding-bottom: 50vw;
     background-color: $light-gray;
     background-image: url("/src/assets/images/lifestyle.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: cover;
+    background-size: contain;
 
     @include tablet {
-      padding-bottom: 490px;
       background-image: url("/src/assets/images/lifestyle-tablet.jpg");
     }
 
     @include desktop {
-      padding-bottom: 1000px;
       background-image: url("/src/assets/images/lifestyle-desktop.jpg");
     }
   }
