@@ -1,31 +1,31 @@
-# mxmaster-2
+# mxmaster
 
-Empty project.
+Практическое задание для конкурса ["Стартуй в веб-разработке"](https://geekbrains.ru/events/web-logitech) от GeekBrains и Logitech, без слайдеров и адаптивного меню по [макету](https://www.figma.com/file/YIt8h03frNCF6AbJnFFAvY/Logitech_MX-Master-3-Copy-Copy-Copy).
 
-## Building and running on localhost
+## Сборка и запуск локально
 
-First install dependencies:
+Установка зависимостей:
 
 ```sh
 npm install
 ```
 
-To create a production build:
+Сборка прод-версии:
 
 ```sh
-npm run build-prod
+npm run build
 ```
 
-To create a development build:
+Сборка версии для разработки:
 
 ```sh
-npm run build-dev
+npm run build:dev
 ```
 
-## Running
+## Запуск
 
 ```sh
-node dist/bundle.js
+npm serve
 ```
 
 ## Credits
